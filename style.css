@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #dedede;
+}
+body{
+    background-color: black;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    z-index: 9999999;
+}
+.home-text{
+    color: #fff;
+    font-weight: 600;
+}
+.nav-item{
+    list-style: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.lista{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: 	#dedede;
+}
+
+.logo{
+    width: 180px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.search{
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.search::placeholder{
+    color: #dedede;
+}
+.user{
+    width: 40px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+.fa-chromecast{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sessao2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.movie-title{
+    color: #fff;
+}
+.movie-title2{
+    color: #fff;
+    padding:10px 20px;
+}
+.relevancia{
+    color: #6aa84f;
+    font-weight: 500;
+}
+.ano{
+    color: #fff;
+    font-weight: 500;
+}
+.temporada{
+    color: #fff;
+    font-weight: 500;
+}
+.movie-date{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.movie-sinopse{
+    color: #fff;
+    font-weight: 500;
+    width: 30%;
+    padding-top: 15px;
+    color: #564d4d;
+}
+.fa-circle-info{
+    color: #fff;
+}
+.fa-play{
+    color: black;
+}
+.movie-watch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.watch-btn{
+    background-color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.watch-btn:hover{
+    background-color: #dedede;
+}
+.assistir{
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.infos-btn{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.infos-btn:hover{
+    background-color: #dedede;
+}
+.more-info{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.movie-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    /*scrollbar*/
+    scroll-behavior: smooth;
+
+}
+.movie-list::-webkit-scrollbar{
+    width: 20px;
+}
+.movie-list::-webkit-scrollbar-thumb{
+    background-color: #dedede;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+.movie-list::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.movie{
+    width: 297px;
+    height: 450px;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.1s ease;
+    filter: brightness(0.7);
+}
+.movie:hover{
+    transform: scale(1.03);
+    filter: brightness(1);
+}
+.serie{
+    width: 605px;
+    height: 400px;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.1s ease;
+    filter: brightness(0.7);
+}
+.serie-list::-webkit-scrollbar{
+    width: 20px;
+}
+.serie-list::-webkit-scrollbar-thumb{
+    background-color: #dedede;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+.serie-list::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.serie:hover{
+    transform: scale(1.03);
+    filter: brightness(1);
+}
+.serie-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+}
+.cartoon-list::-webkit-scrollbar{
+    width: 20px;
+}
+.cartoon-list::-webkit-scrollbar-thumb{
+    background-color: #dedede;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+.cartoon-list::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.cartoon-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-bottom: 200px;
+}
+.cartoon{
+    width: 297px;
+    height: 450px;
+    margin: 5px;
+    object-fit: cover;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: 0.1s ease;
+    filter: brightness(0.7);
+}
+.cartoon:hover{
+    transform: scale(1.03);
+    filter: brightness(1);
+}
+.email-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+}
+.email-input::placeholder{
+    color: #dedede;
+}
+.fa-envelope{
+    color: #fff;
+}
+.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.email-itens{
+    background-color:#831010;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.subscribe{
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*footer*/
+.section-1{
+    width: 100%;
+    height: 31vw;
+    background-image: url(footer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.email-options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    margin-left: 10%;
+}
+.section-1-text{
+    color: #fff;
+}
+.logo-footer{
+    width: 200px;
+    cursor: pointer;
+}
+.column-2{
+    color: #dedede;
+}
+.column-3{
+    color: #dedede;
+}
+.column-4{
+    color: #dedede;
+}
+.section-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%;
+}
+.section-2-text{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.section-2-text:hover{
+    color: #fff;
+}
+/*desktop*/
+@media (min-width: 1024px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    .back{
+        background-image: url(computador.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 50vw;
+        background-size: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10%;
+    }
+    
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1023px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    .back{
+        background-image: url(tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 120vw;
+        background-size: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10%;
+    }
+    .movie-sinopse{
+        width: 70%;
+    }
+    .search{
+        display: none;
+    }
+    .movie{
+        width: 200px;
+        height: 350px;
+    }
+    .serie{
+        width: 350px;
+        height: 200px;
+    }
+    .cartoon{
+        width: 200px;
+        height: 350px;
+    }
+    .section-1-text{
+        font-size: 25px;
+        color: #fff;
+    }
+    .email-options{
+        width: 40%;
+    }
+}
+/*mobile*/
+@media (max-width: 767px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    .back{
+        background-image: url(celular.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 170vw;
+        background-size: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10%;
+    }
+    .movie-sinopse{
+        width: 80%;
+    }
+    .nav-item{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .movie{
+        width: 200px;
+        height: 350px;
+    }
+    .serie{
+        width: 350px;
+        height: 200px;
+    }
+    .cartoon{
+        width: 200px;
+        height: 350px;
+    }
+    .section-1-text{
+        font-size: 15px;
+        color: #fff;
+    }
+    .email-options{
+        width: 85%;
+    }
+    .column-3{
+        display: none;
+    }
+    .column-4{
+        display: none;
+    }
+}
