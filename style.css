@@ -456,4 +456,8 @@ header{
     .column-4{
         display: none;
     }
+    .logo-footer{
+    width: 100px;
+    cursor: pointer;
+}
 }
