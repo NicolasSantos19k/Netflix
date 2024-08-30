@@ -460,4 +460,13 @@ header{
     width: 100px;
     cursor: pointer;
 }
+    .email-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+}
+    
 }
