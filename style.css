@@ -258,14 +258,7 @@ header{
     transform: scale(1.03);
     filter: brightness(1);
 }
-.email-input{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    width: 250px;
-    height: 40px;
-}
+
 .email-input::placeholder{
     color: #dedede;
 }
@@ -358,6 +351,14 @@ header{
         align-items: center;
         padding-left: 10%;
     }
+    .email-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+}
     
 }
 /*tablet*/
@@ -403,6 +404,14 @@ header{
     .email-options{
         width: 40%;
     }
+    .email-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+}
 }
 /*mobile*/
 @media (max-width: 767px){
@@ -465,7 +474,7 @@ header{
     border: none;
     outline: none;
     color: #fff;
-    width: 250px;
+    width: 200px;
     height: 40px;
 }
     
